@@ -1,4 +1,4 @@
-# Python
+# Environnements virtuelsPython
 __pycache__/
 *.py[cod]
 *$py.class
@@ -11,7 +11,7 @@ env/
 # Jupyter Notebook
 .ipynb_checkpoints/
 
-# MLflow
+# Base de données et MLOps
 mlflow.db
 mlruns/
 
@@ -22,12 +22,22 @@ mlruns/
 best.pt
 yolov8n.pt
 
-# OS
-desktop.ini
+# Fichiers système
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# Caches Python
+__pycache__/
+*.pyc
+.pytest_cache/
 
 # Logs
 *.log
 
 # Docker
 .docker/
+
+# (Optionnel) Ignorer les grosses vidéos si elles dépassent 100 Mo
+# videos/*.mp4
+# videos/*.mov
