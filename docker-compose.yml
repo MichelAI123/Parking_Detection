@@ -9,11 +9,11 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      # Synchronisation des dossiers locaux avec le conteneur
       - ./images:/app/images
       - ./videos:/app/videos
-      # Persistance de la base de donnees MLflow
       - ./mlflow.db:/app/mlflow.db
+      # Persistance de la base SQLite native
+      - ./parking.db:/app/parking.db
     restart: unless-stopped
 
   frontend:
@@ -24,8 +24,8 @@ services:
     ports:
       - "8501:8501"
     environment:
-      # C'est ici que l'on indique a Streamlit comment trouver l'API sur le reseau Docker
       - API_URL=http://api:8000/api/v1/analyze/image
+      - API_DB_URL=http://api:8000/api/v1/database/plates
     depends_on:
       - api
     restart: unless-stopped

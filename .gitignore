@@ -13,6 +13,7 @@ env/
 
 # Base de données et MLOps
 mlflow.db
+parking.db
 mlruns/
 
 # YOLO / Models
@@ -34,6 +35,7 @@ __pycache__/
 
 # Logs
 *.log
+journal_analyses.csv
 
 # Docker
 .docker/
