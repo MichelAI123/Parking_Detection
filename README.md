@@ -108,9 +108,10 @@ Le système enregistre chaque détection dans une base de données locale `mlflo
 mlflow ui --backend-store-uri sqlite:///mlflow.db
 ```
 
-## 📝 Auteur
+## 📝 Auteurs
 
-**MichelAI123** - [GitHub](https://github.com/MichelAI123)
+- **MichelAI123** - [GitHub](https://github.com/MichelAI123)
+- **Arole KENFACK** - [GitHub](https://github.com/kenarole)
 
 ## 📄 Licence
 
