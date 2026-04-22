@@ -1,0 +1,20 @@
+# Noyau IA et Vision
+ultralytics==8.4.34
+opencv-python-headless
+easyocr
+numpy
+matplotlib
+
+# Suivi et MLOps
+mlflow
+
+# Backend (Serveur API)
+fastapi
+uvicorn
+pydantic
+python-multipart
+
+# Frontend (Tablette)
+streamlit
+requests
+pillow

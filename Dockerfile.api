@@ -1,0 +1,24 @@
+# Utilisation d'une image Python legere
+FROM python:3.10-slim
+
+# Repertoire de travail dans le conteneur
+WORKDIR /app
+
+# Installation des librairies systeme requises par OpenCV et EasyOCR sous Linux
+RUN apt-get update && apt-get install -y \
+    libgl1 \
+    libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copie et installation des dependances
+COPY requirements-api.txt .
+RUN pip install --no-cache-dir -r requirements-api.txt
+
+# Copie du code source et du modele YOLO
+COPY main.py best.pt ./
+
+# Ouverture du port 8000
+EXPOSE 8000
+
+# Commande de demarrage du serveur
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

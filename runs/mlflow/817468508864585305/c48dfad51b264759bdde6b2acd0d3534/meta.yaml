@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/user/Desktop/001 INTELLIGENCE ARTIFICIELLE EN INFORMATIQUE/Session
+  4 Semestre 4 IA 2/Projet Capstone en IA/Projet_Capstone_IA/runs/mlflow/817468508864585305/c48dfad51b264759bdde6b2acd0d3534/artifacts
+end_time: 1776748831013
+entry_point_name: ''
+experiment_id: '817468508864585305'
+lifecycle_stage: active
+run_id: c48dfad51b264759bdde6b2acd0d3534
+run_name: train5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1776747646819
+status: 3
+tags: []
+user_id: dongmo

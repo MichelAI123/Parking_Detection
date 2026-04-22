@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# MLflow
+mlflow.db
+mlruns/
+
+# YOLO / Models
+*.pt
+!yolov8n.pt # Maybe keep the base model if small, but user has best.pt (6MB) and yolov8n.pt (6.5MB)
+# Actually, it's better to ignore large .pt files or use Git LFS. I'll ignore them for now.
+best.pt
+yolov8n.pt
+
+# OS
+desktop.ini
+.DS_Store
+
+# Logs
+*.log
+
+# Docker
+.docker/

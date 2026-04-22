@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/user/Desktop/001 INTELLIGENCE ARTIFICIELLE EN INFORMATIQUE/Session
+  4 Semestre 4 IA 2/Projet Capstone en IA/Projet_Capstone_IA/runs/mlflow/550167362903575917/f670a8d9d2f8469684ff6d6c8608e866/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '550167362903575917'
+lifecycle_stage: active
+run_id: f670a8d9d2f8469684ff6d6c8608e866
+run_name: detect_parking
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1776803995671
+status: 1
+tags: []
+user_id: dongmo

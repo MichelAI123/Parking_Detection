@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: alpr_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Synchronisation des dossiers locaux avec le conteneur
+      - ./images:/app/images
+      - ./videos:/app/videos
+      # Persistance de la base de donnees MLflow
+      - ./mlflow.db:/app/mlflow.db
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    container_name: alpr_frontend
+    ports:
+      - "8501:8501"
+    environment:
+      # C'est ici que l'on indique a Streamlit comment trouver l'API sur le reseau Docker
+      - API_URL=http://api:8000/api/v1/analyze/image
+    depends_on:
+      - api
+    restart: unless-stopped

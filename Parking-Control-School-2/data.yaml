@@ -1,0 +1,12 @@
+names:
+- plaque
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: parking-control-school-paepn
+  url: https://universe.roboflow.com/aroles-workspace/parking-control-school-paepn/dataset/2
+  version: 2
+  workspace: aroles-workspace
+test: ../test/images
+train: ../train/images
+val: ../valid/images
