@@ -110,7 +110,7 @@ mlflow ui --backend-store-uri sqlite:///mlflow.db
 
 ## 📝 Auteurs
 
-- **MichelAI123** - [GitHub](https://github.com/MichelAI123)
+- **Michel DONGMO** - [GitHub](https://github.com/MichelAI123)
 - **Arole KENFACK** - [GitHub](https://github.com/kenarole)
 
 ## 📄 Licence
